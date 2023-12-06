@@ -1,0 +1,91 @@
+<!-- load thu vien bootstrap -->
+{% load django_bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+<!-- load thu muc static -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'login/style.css' %}"
+    />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="row h-100">
+        <div class="col-md-3 left-panel">
+          <img
+            class="image-logo"
+            src="{% static 'login/images/logo.svg' %}"
+            alt="SVG Image"
+          />
+          <div class="login-heading">Login into your account</div>
+          <form class="w-100">
+            <div style="margin-bottom: 23px">
+              <label for="inputEmail" class="label-input">Email Address</label>
+              <div class="input-container">
+                <input
+                  id="inputEmail"
+                  type="email"
+                  class="input-field"
+                  placeholder="alex@email.com"
+                />
+                <div class="input-span">
+                  <img
+                    class="input-span-icon"
+                    src="{% static 'login/images/icon_email.svg' %}"
+                    alt="SVG Image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="inputPassword" class="label-input">Password</label>
+              <div class="input-container">
+                <input
+                  id="inputPassword"
+                  type="password"
+                  class="input-field"
+                  placeholder="Enter your password"
+                />
+                <div class="input-span">
+                  <img
+                    class="input-span-icon"
+                    src="{% static 'login/images/icon_lock.svg' %}"
+                    alt="SVG Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button type="button" id="btnForgotPass" class="btn btn-link">
+                Forgot Password?
+              </button>
+            </div>
+            <button type="submit" class="btn-login">Login Now</button>
+          </form>
+          <div class="divider">
+            <div class="divider-line"></div>
+            <div class="or-text">OR</div>
+            <div class="divider-line"></div>
+          </div>
+          <button type="button" class="btn-outline-signup">Signup Now</button>
+        </div>
+        <div class="col-md-9 d-flex justify-content-center right-panel">
+          <img
+            class="image-illustrator"
+            src="{% static 'login/images/login_illustrator.svg' %}"
+            alt="SVG Image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
