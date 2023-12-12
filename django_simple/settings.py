@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_bootstrap5',
     'rest_framework',
-    'myapp.apps.UsersConfig',
+    'myapp.apps.MyappConfig',
     'users.apps.UsersConfig',
 ]
 
