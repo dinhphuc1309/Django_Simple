@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1fb9483e3b8767c3d96a122118fc1fd40ee686a64e954a38f3cddcdbd2a0f8dd"
+            "sha256": "4ec6fabcd6a11df74d46e0ae433e05eabc10921a51d0ed74edd2799fb83bd88f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -41,6 +41,33 @@
             "index": "pypi",
             "markers": "python_version >= '3.7'",
             "version": "==23.3"
+        },
+        "django-filter": {
+            "hashes": [
+                "sha256:67583aa43b91fe8c49f74a832d95f4d8442be628fd4c6d65e9f811f5153a4e5c",
+                "sha256:99122a201d83860aef4fe77758b69dda913e874cc5e0eaa50a86b0b18d708400"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==23.5"
+        },
+        "djangorestframework": {
+            "hashes": [
+                "sha256:579a333e6256b09489cbe0a067e66abe55c6595d8926be6b99423786334350c8",
+                "sha256:eb63f58c9f218e1a7d064d17a70751f528ed4e1d35547fdade9aaf4cd103fd08"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.6'",
+            "version": "==3.14.0"
+        },
+        "markdown": {
+            "hashes": [
+                "sha256:5874b47d4ee3f0b14d764324d2c94c03ea66bee56f2d929da9f2508d65e722dc",
+                "sha256:b65d7beb248dc22f2e8a31fb706d93798093c308dc1aba295aedeb9d41a813bd"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==3.5.1"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -120,6 +147,13 @@
             "index": "pypi",
             "markers": "python_version >= '3.7'",
             "version": "==2.9.9"
+        },
+        "pytz": {
+            "hashes": [
+                "sha256:7b4fddbeb94a1eba4b557da24f19fdf9db575192544270a9101d8509f9f43d7b",
+                "sha256:ce42d816b81b68506614c11e8937d3aa9e41007ceb50bfdcb0749b921bf646c7"
+            ],
+            "version": "==2023.3.post1"
         },
         "sqlparse": {
             "hashes": [
