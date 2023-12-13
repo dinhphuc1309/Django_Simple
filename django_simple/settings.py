@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     'rest_framework',
     'myapp.apps.MyappConfig',
-    'users.apps.UsersConfig',
+    'profiles.apps.ProfilesConfig',
 ]
 
 MIDDLEWARE = [
@@ -88,6 +88,8 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'myapp.User'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -124,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_ROOT = '%s/myapp/static/' % BASE_DIR
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
