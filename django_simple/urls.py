@@ -19,13 +19,17 @@ from django.urls import include, path
 
 from myapp import router as users_api_router
 from profiles import router as profiles_api_router
+from oauth2_provider import views as oauth2_views
+from oauth2_provider import urls
 
 api_url_patterns = [
     path('', include(users_api_router.router.urls)),
     path('', include(profiles_api_router.router.urls)),
+    path('token', oauth2_views.TokenView.as_view(), name="token"),
 ]
 
 urlpatterns = [
+    path('o/', include(urls, namespace='oauth2_provider')),
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
     path('api/', include(api_url_patterns)),
